@@ -1,0 +1,59 @@
+Yahtzee Design Document
+
+2 or more players
+Each has their own score card.  Consisting of a top or bottom score area. Each is independently
+calculated and then added at the end.
+
+Ones = Number of 1's  1 for roll
+Twos = Number of 2's x 2 for roll
+Threes = Number of 3's x 3 for roll
+Fours = Number of 4's x 4 per roll
+Fives = Number of 5's x 5 per roll
+Sixes = Number of 6's x 6 per roll
+
+
+Top Score = addition of the Ones, Two's, Three's, Fours, Fives, and Sixes.
+If the player has 65 or more for the Top Score a bonus of 35 points is applied.
+
+Bottom Score
+3 of a Kind = add all dice if there are a minimum of 3 matching die.
+4 of a Kind = add all dice if there are a minimum of 4 matching die.
+Full House = 3 of one die and 2 of another.  Score = 25
+Small Straight = 4 die in order (1,2,3,4) or (2,3,4,5) or (3,4,5,6).  A minimum of 4.
+Score = 30
+Large Straight = 5 die all in a row. (1,2,3,4,5) or (2,3,4,5,6)
+Yahtzee = all 5 die matching = 50
+Chance = add all die
+
+Scratch is an option for top score card and bottom score card.
+Additional Yahtzees are scored as 50 for any category.  Player has to already have one yahtzee.ey
+
+Bottom Score Total = Addition of all bottom Score card items.
+
+Total Score = addition of Top Score Card and Bottom Score Card.
+
+Winner is player with the largest Total Score.
+
+Play
+Player 1 starts 
+Roll1
+Player one rolls all 5 die.
+Randomly choose the 5 die amounts
+Die1 = 
+Die2 = 
+Die3 = 
+Die4 = 
+Die5 = 
+Die6 = 
+
+Player can discard any of the die they do not want.
+
+Player can di
+
+Ones = 
+Twos = 
+Threes = 
+Fours = 
+Fives = 
+Sixes = 
+
