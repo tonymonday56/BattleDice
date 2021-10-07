@@ -7,6 +7,14 @@ class My_yahtzee:
     die3 = 0
     die4 = 0
     die5 = 0
+    player1_ones = 0
+    player1_twos = 0
+    player1_threes = 0
+    player1_fours = 0
+    player1_fives = 0
+    player1_sixes = 0
+
+
     def __init__(self, player_name):
         self.player_name = player_name
 
@@ -15,7 +23,26 @@ class My_yahtzee:
         My_yahtzee.roll2()
         My_yahtzee.roll3()
         
-        
+    def score(self):
+        how_to_score = input("How would you like to score your dice?") 
+        upper_card1 = {"Ones": 0, "Twos": 0, "Threes": 0, "Fours": 0, "Fives": 0, "Sixes": 0}
+        current_hand = list(My_yahtzee.die1, My_yahtzee.die2,  My_yahtzee.die3,  My_yahtzee.die4,  My_yahtzee.die5)
+        print("1 for Ones")
+        print("2 for Twos")
+        print("3 for Threes")
+        print("4 for Fours")
+        print("5 for Fives")
+        print("6 for Sixes")
+
+        score_choice_upper1 = input("Please choose one of the above options:")
+        if score_choice_upper1 == 1:
+            upper_card1["Ones"] = current_hand.count(1)
+            upper_card1["Twos"] = 0
+            upper_card1["Threes"] = 0
+            upper_card1["Fours"] = 0
+            upper_card1["Fives"] = 0
+            upper_card1["Sixes"] = 0
+
     def roll1(self):
         '''Initial roll of the dice'''
         My_yahtzee.die1 = random.randint(1,6)
@@ -51,7 +78,7 @@ class My_yahtzee:
         print("Would you like to score your points or roll again?")
         score_or_roll = input("Please enter (s) to score now or (r) to roll again.")
         if score_or_roll.upper() == "S":
-            score()
+            My_yahtzee.score()
         elif score_or_roll.upper() == "R":
             second_roll()
         else:
@@ -59,24 +86,7 @@ class My_yahtzee:
         print(self.player_name, "Your hand: ", My_yahtzee.die1, My_yahtzee.die2, My_yahtzee.die3, My_yahtzee.die4, My_yahtzee.die5)
         return self.player_name, My_yahtzee.die1, My_yahtzee.die2, My_yahtzee.die3, My_yahtzee.die4, My_yahtzee.die5
 
-    def score(self):
-        how_to_score = input("How would you like to score your dice?") 
-        upper_card1 = {"Ones": 0, "Twos": 0, "Threes": 0, "Fours": 0, "Fives": 0, "Sixes": 0}
-        print("1 for Ones")
-        print("2 for Twos")
-        print("3 for Threes")
-        print("4 for Fours")
-        print("5 for Fives")
-        print("6 for Sixes")
-
-        score_choice_upper1 = input("Please choose one of the above options:")
-        if score_choice_upper1 == 1:
-            upper_card1["Ones"] = 0
-            upper_card1["Twos"] = 0
-            upper_card1["Threes"] = 0
-            upper_card1["Fours"] = 0
-            upper_card1["Fives"] = 0
-            upper_card1["Sixes"] = 0
+    
 
     def roll2(self):
         pass
