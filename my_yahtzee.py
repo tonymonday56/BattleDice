@@ -47,7 +47,7 @@ class My_yahtzee:
 
         print("Player Name: ", self.player_name)
         print("This is your current hand after 2nd roll")
-        print("Would you like to score your points or roll again?"y)
+        print("Would you like to score your points or roll again?")
         score_or_roll = input("Please enter (s) to score now or (r) to roll again.")
         if score_or_roll.upper() == "S":
             score()
