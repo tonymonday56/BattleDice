@@ -130,6 +130,7 @@ class My_yahtzee:
         if score_choice.upper() == "1":
             self.player1_ones = self.player1_firstRollList.count(1)
             print("self.player1_ones", self.player1_ones)
+            self.player1_scorecard()
         elif score_choice.upper() == "2":
             self.player1_twos = self.player1_firstRollList.count(2) * 2
             print("self.player1_twos", self.player1_twos)
@@ -171,7 +172,7 @@ class My_yahtzee:
                 self.player1_chance = self.player1_chance + i   
             print("self.player1_chance: ", self.player1_chance)
     
-        self.player1_scorecard()
+            self.player1_scorecard()
 
 
 
