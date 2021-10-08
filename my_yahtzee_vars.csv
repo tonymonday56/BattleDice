@@ -1,0 +1,62 @@
+class My_yahtzee:
+    player1_name,""
+    player1_die1,0
+    player1_die2,0
+    player1_die3,0
+    player1_die4,0
+    player1_die5,0
+    player1_rollNumber,1
+    player1_firstRoll,{1:0, 2:0, 3:0, 4:0, 5:0}
+    player1_firstRollList,()
+    player1_secondRoll,{1:0, 2:0, 3:0, 4:0, 5:0}
+    player1_secondRollList,()
+    player1_thirdRoll,{1:0, 2:0, 3:0, 4:0, 5:0}
+    player1_thirdRollList,()
+
+    # player1 scorecard
+    player1_ones,0
+    player1_twos,0
+    player1_threes,0
+    player1_fours,0
+    player1_fives,0
+    player1_sixes,0
+    player1_upperTotal,0
+    player1_upperBonus,0
+    player1_upperTotal,0
+    player1_3ofaKind,0
+    player1_4ofaKind,0
+    player1_fullHouse,0
+    player1_smallStraight,0
+    player1_largeStraight,0
+    player1_yahtzee,0
+    player1_chance,0
+    player1_lowerTotal,0
+    player1_total,0
+
+    player2_name,""
+    player2_die1,0
+    player2_die2,0
+    player2_die3,0
+    player2_die4,0
+    player2_die5,0
+    player2_rollNumber,1
+
+    #player2_scorecard
+    player2_ones,0
+    player2_twos,0
+    player2_threes,0
+    player2_fours,0
+    player2_fives,0
+    player2_sixes,0
+    player2_upperTotal,0
+    player2_upperBonus,0
+    player2_upperTotal,0
+    player2_3ofaKind,0
+    player2_4ofaKind,0
+    player2_fullHouse,0
+    player2_smallStraight,0
+    player2_largeStraight,0
+    player2_yahtzee,0
+    player2_chance,0
+    player2_lowerTotal,0
+    player2_total,0

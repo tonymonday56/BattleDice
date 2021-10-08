@@ -160,10 +160,10 @@ class My_yahtzee:
             print("self.player1_fullHouse: ", self.player1_fullHouse)
         elif score_choice.upper() == "S":
             self.player1_SmallStraight = 30
-            print("self.player1_smallStraight: ", self.player1_SmallStraight)
+            print("self.player1_smallStraight: ", self.player1_smallStraight)
         elif score_choice.upper() == "L":
             self.player1_LargeStraight = 40
-            print("self.player1_largeStraight: ", self.player1_LargeStraight)
+            print("self.player1_largeStraight: ", self.player1_largeStraight)
         elif score_choice.upper() == "S":
             self.player1_yahtzee = 50
             print("self.player1_fullHouse: ", self.player1_fullHouse)
