@@ -63,8 +63,31 @@ class My_yahtzee:
     player2_chance = 0
     player2_lowerTotal = 0
     player2_total = 0
+    
     def __init__(self, player_name):
         self.player_name = player_name
+
+    @classmethod
+    def player1_scorecard(self):
+        print("Ones: ", self.player1_ones)
+        print("Twos: ", self.player1_twos)
+        print("Threes :", self.player1_threes)
+        print("Fours: ", self.player1_fours)
+        print("Fives: ", self.player1_fives)
+        print("Sixes: ", self.player1_sixes)
+        print("Upper Total: ", self.player1_upperTotal)
+        print("Upper Bonus:", self.player1_upperBonus)
+        print("Upper Total: ", self.player1_upperTotal)
+        print("3 of a Kind: ", self.player1_3ofaKind)
+        print("4 of a Kind: ", self.player1_4ofaKind)
+        print("Full House: ", self.player1_fullHouse)
+        print("Small Straight: ", self.player1_smallStraight)
+        print("Large Straight: ", self.player1_largeStraight)
+        print("Yahtzee: ", self.player1_yahtzee)
+        print("Chance: ", self.player1_chance)
+        print("Lower Total: ", self.player1_lowerTotal)
+        print("Total: ", self.player1_total)
+
 
     @classmethod
     def play(self):
@@ -72,7 +95,7 @@ class My_yahtzee:
         self.score()
 
     
- 
+    
 
     @classmethod
     def score(self):
@@ -84,34 +107,9 @@ class My_yahtzee:
             self.player1_firstRoll[4] = self.player1_die4  
             self.player1_firstRoll[5] = self.player1_die5
             print("player1_first_roll: ", self.player1_firstRoll)
+        
+
     
-    @classmethod
-    def player1_scorecard(self):
-        print("Player1 Name: ",self.player1_name)
-        print("--------------------------")
-        print("Upper Score Card Section")
-        print("--------------------------")
-        print("Ones: ", "  ", self.player1_ones)
-        print("Twos: ", "  ",  self.player1_twos)
-        print("Threes: ", self.player1_threes)
-        print("Fours: ", " ", self.player1_fours)
-        print("Fives: ", " ", self.player1_fives)
-        print("Sixes: ", " ",self.player1_sixes)
-        print("--------------------------")
-        print("Lower Score Card Section")
-        print("--------------------------")
-        print("3 of a kind: ", self.player1_3ofaKind)
-        print("4 of a kind: ", self.player1_4ofaKind)
-        print("Full House: ", self.player1_fullHouse)
-        print("Small Straight: ", self.player1_smallStraight)
-        print("Large Straight: ", self.player1_largeStraight)
-        print("Yahtzee: ", self.player1_yahtzee)
-        print("Chance: ", self.player1_chance)
-
-       
-            
-
-    #    current_hand = list(self.player1_die1, self.player1_die2,  self.player1_die3,  self.player1_die4,  self.player1_die5)
         print("Enter[1] to score Ones:")
         print("Enter[2] to score Twos: ")
         print("Enter[3] to score Threes: ")
@@ -132,30 +130,29 @@ class My_yahtzee:
         if score_choice.upper() == "1":
             self.player1_ones = self.player1_firstRollList.count(1)
             print("self.player1_ones", self.player1_ones)
-            self.player1_scorecard
         elif score_choice.upper() == "2":
-            self.player1_twos = self.player1_firstRollList.count(2)
+            self.player1_twos = self.player1_firstRollList.count(2) * 2
             print("self.player1_twos", self.player1_twos)
         elif score_choice.upper() == "3":
-            self.player1threess = self.player1_firstRollList.count(3)
+            self.player1threes = self.player1_firstRollList.count(3) * 3
             print("self.player1_threes", self.player1_threes)
         elif score_choice.upper() == "4":
-            self.player1_fours = self.player1_firstRollList.count(4)
+            self.player1_fours = self.player1_firstRollList.count(4) * 4
             print("self.player1_fours", self.player1_fours)
         elif score_choice.upper() == "5":
-            self.player1_fives = self.player1_firstRollList.count(5)
+            self.player1_fives = self.player1_firstRollList.count(5) * 5
             print("self.player1_fives", self.player1_fives)
-        elif score_choice.upper() == "6":
-            self.player1_sixes = self.player1_firstRollList.count(6)
+        elif score_choice.upper() =="6":
+            self.player1_sixes = self.player1_firstRollList.count(6) * 6
             print("self.player1_sixes", self.player1_sixes)
 
         elif score_choice.upper() == "T":
             for i in self.player1_firstRollList:
-                self.player1_3ofaKind = self.player1_3ofaKind + i
+                self.player1_3ofaKind == self.player1_3ofaKind + i
             print("self.player1_3ofaKind: ", self.player1_3ofaKind)
         elif score_choice.upper() == "F":
             for i in self.player1_firstRollList:
-                self.player1_4ofaKind = self.player1_4ofaKind + i
+                self.player1_4ofaKind == self.player1_4ofaKind + i
             print("self.player1_4ofaKind: ", self.player1_4ofaKind)
         elif score_choice.upper() == "FH":
             self.player1_fullHouse = 25
@@ -174,7 +171,7 @@ class My_yahtzee:
                 self.player1_chance = self.player1_chance + i   
             print("self.player1_chance: ", self.player1_chance)
     
-
+        self.player1_scorecard()
 
 
 
@@ -232,9 +229,11 @@ class My_yahtzee:
             self.roll()
         else:
             print("Please choose again")
-        print(self.player1_name, "Your hand: ", self.player1_die1, self.player1_die2, self.player1_die3,self.player1_die4, self.player1_die5)
-        return self.player1_name, self.player1_die1, self.player1_die2, self.player1_die3, self.player1_die4, self.player1_die5
-
+        print()
+        self.player1_name = self.player1_name
+        print(self.player1_name)
+        print("|", self.player1_die1, "|", self.player1_die2, "|", self.player1_die3, "|",  self.player1_die4,"|",self.player1_die5, "|")
+ 
     
 
     
