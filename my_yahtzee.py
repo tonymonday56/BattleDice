@@ -196,11 +196,16 @@ class My_yahtzee:
             print("You rolled.....")
             print("|", self.player1_die1, "|", self.player1_die2, "|", self.player1_die3, "|",  self.player1_die4, "|", self.player1_die5)
             print()
+            keep1 = input("Would you like to discard any die?: ")
+            if keep1.upper() == "N":
+                self.score()
+                return self.player1_die1, self.player1_die2, self.player1_die3, self.player1_die4, self.player1_die5
             discard1 = input("Would you like to discard die1? Y for Yes:")
             discard2 = input("Would you like to discard die2? Y for Yes:")
             discard3 = input("Would you like to discard die3? Y for Yes:")
             discard4 = input("Would you like to discard die4? Y for Yes:")
             discard5 = input("Would you like to discard die5? Y for Yes:")
+        
         if discard1.upper() == "Y":
             self.player1_die1 =random.randint(1,6)
             print()
@@ -217,21 +222,25 @@ class My_yahtzee:
             self.player1_die5 = random.randint(1,6)
             print()
 
-            print(self.player1_name, "Your hand: ")
-            print(self.player1_die1, self.player1_die2, self.player1_die3, self.player1_die4, self.player1_die5)
-            print()
-        elif self.player1_rollNumber == 3:
-            # do not allow for discard of unwanted die.
-            pass
+
+        print(self.player1_name, "Your hand: ")
+        print(self.player1_die1, self.player1_die2, self.player1_die3, self.player1_die4, self.player1_die5)
+        print()
+          #  elif self.player1_rollNumber == 3:
+            # do not allow for discard of unwanted die.N
+           # pass
 
 
 
-
+        keep2 = input("Would you like to discard any die?: ")
         discard1 = input("Would you like to discard die1? Y for Yes:")
         discard2 = input("Would you like to discard die2? Y for Yes:")
         discard3 = input("Would you like to discard die3? Y for Yes:")
         discard4 = input("Would you like to discard die4? Y for Yes:")
         discard5 = input("Would you like to discard die5? Y for Yes:")
+
+        if keep2.upper() == "N":
+            self.score()
         if discard1.upper() == "Y":
             self.player1_die1 =random.randint(1,6)
             print()
@@ -249,7 +258,7 @@ class My_yahtzee:
             print()
 
         print()
-        print(self.player1_name, "Your hand: ")
+        print(My_yahtzee.player1_name, "Your hand: ")
         print("|", self.player1_die1, "|", self.player1_die2, "|", self.player1_die3, "|",  self.player1_die4, "|", self.player1_die5)
         print()
         print("Would you like to score your points or roll again?")
@@ -261,7 +270,7 @@ class My_yahtzee:
             self.player1_rollNumber = self.player1_rollNumber + 1
             self.roll()
         else:
-            print("Please choose again")
+            print("Invalid Selection.  Please choose again.")
         print()
         self.player1_name = self.player1_name
         print(self.player1_name)
