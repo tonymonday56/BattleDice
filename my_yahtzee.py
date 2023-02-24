@@ -79,7 +79,7 @@ class My_yahtzee:
     def __init__(self, player_name):
         self.player_name = player_name
        
-    @classmethod
+    @classmethod(My_yahtzee)
     def player1_scorecard(self):
         print("Ones: ", self.player1_ones)
         print("Twos: ", self.player1_twos)
@@ -101,7 +101,7 @@ class My_yahtzee:
         print("Total: ", self.player1_total)
 
 
-    @classmethod
+    @classmethod(My_yahtzee)
     def play(self):
         self.roll()
         self.score()
@@ -197,7 +197,7 @@ class My_yahtzee:
         #     self.player1_card["Fives"] = 0
         #     self.player1_card["Sixes"] = 0
 
-    @classmethod
+    @classmethod(My_yahtzee)
     def roll(self):
         if self.player1_roll.get('player1_rollNnumber') == 1:
             '''Initial roll of the dice'''
@@ -221,16 +221,16 @@ class My_yahtzee:
             keep1 = input("Would you like to discard any die?: ")
             if keep1.upper() == "N":
                 self.score()
-                return self..player1_roll.player1_die1, self.player1_roll.player1_die2, self.player1_roll, self.player1_die4, self.player1_die5
+                return self.player1_roll.player1_die1, self.player1_roll.player1_die2, self.player1_roll.player1_die3, self.player1_roll.player1_die4, self.player1_roll.player1_die5
             
     def make_choice(self):
         '''Give player opportunity to modify roll.'''
-            discard1 = input("Would you like to discard die2? Y for Yes:")
-            discard2 = input("Would you like to discard die2? Y for Yes:")
-            discard3 = input("Would you like to discard die3? Y for Yes:")
-            discard4 = input("Would you like to discard die4? Y for Yes:")
-            discard5 = input("Would you like to discard die5? Y for Yes:")
-        discard_roll1 = [discard1, discard2, discard3, discard4, discard5]
+        discard1 = input("Would you like to discard die1? Y for Yes:")
+        discard2 = input("Would you like to discard die2? Y for Yes:")
+        discard3 = input("Would you like to discard die3? Y for Yes:")
+        discard4 = input("Would you like to discard die4? Y for Yes:")
+        discard5 = input("Would you like to discard die5? Y for Yes:")
+        self.player1_roll.discard_roll1 = [discard1, discard2, discard3, discard4, discard5]
         if discard1.upper() == "Y":
             print('Die# 1')
         elif discard2.upper() == "Y":
@@ -320,3 +320,4 @@ class My_yahtzee:
 
 yahtzee1 = My_yahtzee("Tony")
 yahtzee1.roll()
+
