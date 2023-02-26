@@ -1,3 +1,4 @@
+# Not part of the project.  from Battlewar. add to git ignore.
 def insertTieDataTable():
         global game_data
         global time_now

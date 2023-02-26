@@ -1,57 +1,56 @@
-def insertTieDataTable():
-        global game_data
-        global time_now
-        #time_now = time.strftime(t)
+# my_yahtzee_db.py
+from colorama import Fore, Back, Style
+import sqlite3
+from sqlite3 import Error
+import datetime
+import user_login
+
+class My_yahtzee_db:
+    def insert_login_data(self, username):
+        '''Insert player turn data.'''
+            #global game_data
+           # global time_now
+        time_now = datetime.datetime()
         try:
-            sqliteConnection = sqlite3.connect("C:\\BattleWar\\dB\\war.sqlite")
+            sqliteConnection = sqlite3.connect("/home/tonymonday56/GitHub/My_yahtzee/db/my_yahtzee.db")
             cursor = sqliteConnection.cursor()
-            print(Fore.LIGHTGREEN_EX + "Successfully connected to SQLite database [War] for war tie data insertion...")
+            print(Fore.LIGHTGREEN_EX + "Successfully connected to SQLite database [My_yahtzee]")
             print(Style.RESET_ALL)
 
             
-            sqlite_insert_with_param_tie_data = """INSERT INTO tie_data (
-                                                                        game_number, 
-                                                                        time_now, 
-                                                                        hand, 
-                                                                        hand_type, 
-                                                                        player1_card1, 
-                                                                        player1_card2, 
-                                                                        player1_card3, 
-                                                                        player1_card4, 
-                                                                        player2_card1, 
-                                                                        player2_card2, 
-                                                                        player2_card3, 
-                                                                        player2_card4, 
-                                                                        tie_winner
-                                                                        ) 
-                                                                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);"""
+            sqlite_insert_user_logins = """INSERT INTO user_logins (
+                                                                        username, 
+                                                                        time_now) 
+                                                                        VALUES
+                                                                        (?, ?);"""
 
-            data_tuple_tie = (
-                                play_data.get("game_number"), 
-                                time_now, 
-                                play_data.get('hand'), 
-                                play_data.get('hand_type'), 
-                                play_data.get('player1_card1'), 
-                                play_data.get('player1_card2'),
-                                play_data.get('player1_card3'), 
-                                play_data.get('player1_card4'), 
-                                play_data.get('player2_card1'), 
-                                play_data.get('player2_card2'), 
-                                play_data.get('player2_card3'), 
-                                play_data.get('player2_card4'), 
-                                play_data.get('tie_winner')
+            data_tuple_time = (
+                                My_yahtzee.user_logins.get("username"),
+                                time_now,
                                 )
 
-            cursor.execute(sqlite_insert_with_param_tie_data, data_tuple_tie)
+            cursor.execute(sqlite_insert_user_logins, data_tuple_tie)
             sqliteConnection.commit()
             cursor.close()
 
         except sqlite3.Error as error:
-            print(Fore.RED + "Failure to insert tie hand data into SQLite database [War] table=tie_data...")
+            print(Fore.RED + "Failure to insert user login into SQLite database [ My_yahtzee] table=tie_data...")
             print(Style.RESET_ALL)
             print("Error: ", error)
         finally:
             if sqliteConnection:
                 sqliteConnection.close()
-                print(Fore.LIGHTGREEN_EX + "The SQLite connection to insert War Hand data SQLite database [War] is closed...")
+                print(Fore.LIGHTGREEN_EX + "The SQLite connection to insert User Login data SQLite database [My_Yahtzee] is closed...")
                 print(Style.RESET_ALL)
+
+    
+    def insert_game_data(self):
+        '''Insert score card data.'''
+        pass
+        
+    def insert_registration_data(self):
+        '''Insert new player registration data.'''
+        pass
+    
+my_yahtzee_db = My_yahtzee_db()
+my_yahtzee_db.insert_game_data()
