@@ -8,7 +8,7 @@ import datetime
 
 
 def insert_login_data(username):
-    '''Insert player turn data.'''
+    '''Insert player turn data. Action to be completed upon turn completion.'''
         #global game_data
        # global time_now
     time_now = datetime.datetime()
