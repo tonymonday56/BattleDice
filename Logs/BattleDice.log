@@ -1,0 +1,13 @@
+2024.03.06 03:25:32 PM INFO | BattleDice | 34 | <module> | info message
+2024.03.06 03:25:32 PM WARNING | BattleDice | 35 | <module> | warn message
+2024.03.06 03:25:32 PM ERROR | BattleDice | 36 | <module> | error message
+2024.03.06 03:25:32 PM CRITICAL | BattleDice | 37 | <module> | critical message
+2024.03.06 03:25:32 PM INFO | BattleDice | 181 | play | Function play() started successfully
+2024.03.06 03:25:32 PM INFO | BattleDice | 195 | roll | Function roll() called successfully
+2024.03.06 03:25:48 PM INFO | BattleDice | 211 | roll | Function make_choice() being called from roll() - roll1
+2024.03.06 03:25:48 PM INFO | BattleDice | 234 | make_choice | Function make_choice() called successfully
+2024.03.06 03:25:58 PM INFO | BattleDice | 286 | complete_reroll | Function complete_reroll() called successfully
+2024.03.06 03:25:58 PM INFO | BattleDice | 299 | complete_reroll | Function roll() called from complete_reroll()
+2024.03.06 03:25:58 PM INFO | BattleDice | 303 | complete_reroll | Function roll() being called from complete_reroll()
+2024.03.06 03:25:58 PM INFO | BattleDice | 195 | roll | Function roll() called successfully
+2024.03.06 03:25:58 PM INFO | BattleDice | 183 | play | Function roll() being called from play()

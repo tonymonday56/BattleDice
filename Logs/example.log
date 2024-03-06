@@ -1,0 +1,48 @@
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:Successfully connected to SQLite database [BattleDice.db]
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:User login data successfully inserted into user_logins table of BattleDice_db
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:The SQLite connection to insert User Login data SQLite database [BattleDice] is closed...
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:Successfully connected to SQLite database [BattleDice.db]
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:User login data successfully inserted into user_logins table of BattleDice_db
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:The SQLite connection to insert User Login data SQLite database [BattleDice] is closed...
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:Successfully connected to SQLite database [BattleDice.db]
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:User login data successfully inserted into user_logins table of BattleDice_db
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:The SQLite connection to insert User Login data SQLite database [BattleDice] is closed...
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:Successfully connected to SQLite database [BattleDice.db]
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:User login data successfully inserted into user_logins table of BattleDice_db
+INFO:root:class=BattleDice_db module=insert_login_data
+INFO:root:The SQLite connection to insert User Login data SQLite database [BattleDice] is closed...
+03/03/2024 01:25:24 PM This message should go to the log file
+03/03/2024 01:25:24 PM So should this
+03/03/2024 01:25:24 PM And this, too
+03/03/2024 01:25:24 PM And non-ASCII stuff, too, like Øresund and Malmö
+03/03/2024 01:25:24 PM class=BattleDice_db module=insert_login_data
+03/03/2024 01:25:24 PM Successfully connected to SQLite database [BattleDice.db]
+03/03/2024 01:25:24 PM class=BattleDice_db module=insert_login_data
+03/03/2024 01:25:24 PM User login data successfully inserted into user_logins table of BattleDice_db
+03/03/2024 01:25:24 PM class=BattleDice_db module=insert_login_data
+03/03/2024 01:25:24 PM The SQLite connection to insert User Login data SQLite database [BattleDice] is closed...
+03/03/2024 01:31:51 PM This message should go to the log file
+03/03/2024 01:31:51 PM So should this
+03/03/2024 01:31:51 PM And this, too
+03/03/2024 01:31:51 PM And non-ASCII stuff, too, like Øresund and Malmö
+03/03/2024 01:31:51 PM class=BattleDice_db module=insert_login_data
+03/03/2024 01:31:51 PM Successfully connected to SQLite database [BattleDice.db]
+03/03/2024 01:31:51 PM class=BattleDice_db module=insert_login_data
+03/03/2024 01:31:51 PM User login data successfully inserted into user_logins table of BattleDice_db
+03/03/2024 01:31:51 PM class=BattleDice_db module=insert_login_data
+03/03/2024 01:31:51 PM The SQLite connection to insert User Login data SQLite database [BattleDice] is closed...
