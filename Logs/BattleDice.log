@@ -11,3 +11,159 @@
 2024.03.06 03:25:58 PM INFO | BattleDice | 303 | complete_reroll | Function roll() being called from complete_reroll()
 2024.03.06 03:25:58 PM INFO | BattleDice | 195 | roll | Function roll() called successfully
 2024.03.06 03:25:58 PM INFO | BattleDice | 183 | play | Function roll() being called from play()
+2024.03.06 10:41:42 PM INFO | __name__ | 162 | play | New game started.
+2024.03.06 10:41:42 PM INFO | __name__ | 180 | firstRoll | Function roll() called successfully
+2024.03.06 10:41:48 PM INFO | __name__ | 164 | play | Function firstRoll() being called from play()
+2024.03.06 10:45:17 PM INFO | __name__ | 162 | play | New game started.
+2024.03.06 10:45:17 PM INFO | __name__ | 180 | firstRoll | Function roll() called successfully
+2024.03.06 10:45:21 PM INFO | __name__ | 196 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.06 10:45:21 PM INFO | __name__ | 230 | make_choice | Function make_choice() called successfully
+2024.03.06 10:45:33 PM INFO | __name__ | 282 | complete_reroll | Function complete_reroll() called successfully
+2024.03.06 10:45:33 PM INFO | __name__ | 295 | complete_reroll | Function roll() called from complete_reroll()
+2024.03.06 10:45:33 PM INFO | __name__ | 299 | complete_reroll | Function roll() being called from complete_reroll()
+2024.03.06 10:45:33 PM INFO | __name__ | 200 | secondRoll | Function secondRoll() called successfully
+2024.03.06 10:45:41 PM INFO | __name__ | 209 | secondRoll | Function make_choice() being called from secondRoll() - roll2
+2024.03.06 10:45:41 PM INFO | __name__ | 230 | make_choice | Function make_choice() called successfully
+2024.03.06 10:45:59 PM INFO | __name__ | 282 | complete_reroll | Function complete_reroll() called successfully
+2024.03.06 10:45:59 PM INFO | __name__ | 295 | complete_reroll | Function roll() called from complete_reroll()
+2024.03.06 10:45:59 PM INFO | __name__ | 299 | complete_reroll | Function roll() being called from complete_reroll()
+2024.03.06 10:45:59 PM INFO | __name__ | 200 | secondRoll | Function secondRoll() called successfully
+2024.03.06 10:46:14 PM INFO | __name__ | 205 | secondRoll | Function make_choice() being called from secondRoll() - roll2
+2024.03.06 10:47:24 PM INFO | __name__ | 162 | play | New game started.
+2024.03.06 10:47:24 PM INFO | __name__ | 180 | firstRoll | Function roll() called successfully
+2024.03.06 10:48:02 PM INFO | __name__ | 196 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.06 10:48:02 PM INFO | __name__ | 230 | make_choice | Function make_choice() called successfully
+2024.03.06 10:48:17 PM INFO | __name__ | 282 | complete_reroll | Function complete_reroll() called successfully
+2024.03.06 10:48:17 PM INFO | __name__ | 295 | complete_reroll | Function roll() called from complete_reroll()
+2024.03.06 10:48:17 PM INFO | __name__ | 299 | complete_reroll | Function roll() being called from complete_reroll()
+2024.03.06 10:48:17 PM INFO | __name__ | 200 | secondRoll | Function secondRoll() called successfully
+2024.03.06 10:48:24 PM INFO | __name__ | 209 | secondRoll | Function make_choice() being called from secondRoll() - roll2
+2024.03.06 10:48:24 PM INFO | __name__ | 230 | make_choice | Function make_choice() called successfully
+2024.03.06 10:48:45 PM INFO | __name__ | 282 | complete_reroll | Function complete_reroll() called successfully
+2024.03.06 10:48:45 PM INFO | __name__ | 295 | complete_reroll | Function roll() called from complete_reroll()
+2024.03.06 10:48:45 PM INFO | __name__ | 299 | complete_reroll | Function roll() being called from complete_reroll()
+2024.03.06 10:48:45 PM INFO | __name__ | 200 | secondRoll | Function secondRoll() called successfully
+2024.03.06 10:48:51 PM INFO | __name__ | 209 | secondRoll | Function make_choice() being called from secondRoll() - roll2
+2024.03.06 10:48:51 PM INFO | __name__ | 230 | make_choice | Function make_choice() called successfully
+2024.03.06 10:49:13 PM INFO | __name__ | 282 | complete_reroll | Function complete_reroll() called successfully
+2024.03.06 10:49:13 PM INFO | __name__ | 295 | complete_reroll | Function roll() called from complete_reroll()
+2024.03.06 10:49:13 PM INFO | __name__ | 304 | complete_reroll | Function score() being called from complete_reroll()
+2024.03.06 10:49:13 PM INFO | __name__ | 304 | complete_reroll | Function score() being called from complete_reroll()
+2024.03.06 10:49:13 PM INFO | __name__ | 304 | complete_reroll | Function score() being called from complete_reroll()
+2024.03.06 10:49:13 PM INFO | __name__ | 164 | play | Function firstRoll() being called from play()
+2024.03.06 10:58:21 PM INFO | __name__ | 162 | play | New game started.
+2024.03.06 10:58:21 PM INFO | __name__ | 180 | firstRoll | Function roll() called successfully
+2024.03.06 10:58:30 PM INFO | __name__ | 196 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.06 10:58:30 PM INFO | __name__ | 230 | make_choice | Function make_choice() called successfully
+2024.03.06 10:58:51 PM INFO | __name__ | 282 | complete_reroll | Function complete_reroll() called successfully
+2024.03.06 10:58:51 PM INFO | __name__ | 295 | complete_reroll | Function roll() called from complete_reroll()
+2024.03.06 10:58:51 PM INFO | __name__ | 300 | complete_reroll | Function SecondRoll() being called from complete_reroll()
+2024.03.06 10:58:51 PM INFO | __name__ | 200 | secondRoll | Function secondRoll() called successfully
+2024.03.06 10:58:59 PM INFO | __name__ | 209 | secondRoll | Function make_choice() being called from secondRoll() - roll2
+2024.03.06 10:58:59 PM INFO | __name__ | 230 | make_choice | Function make_choice() called successfully
+2024.03.06 10:59:08 PM INFO | __name__ | 282 | complete_reroll | Function complete_reroll() called successfully
+2024.03.06 10:59:08 PM INFO | __name__ | 295 | complete_reroll | Function roll() called from complete_reroll()
+2024.03.06 10:59:08 PM INFO | __name__ | 306 | complete_reroll | Function lastRoll() being called from complete_reroll()
+2024.03.06 10:59:08 PM INFO | __name__ | 311 | complete_reroll | Function score_test() being called from complete_reroll()
+2024.03.06 11:00:17 PM INFO | __name__ | 162 | play | New game started.
+2024.03.06 11:00:17 PM INFO | __name__ | 180 | firstRoll | Function roll() called successfully
+2024.03.06 11:00:23 PM INFO | __name__ | 196 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.06 11:00:23 PM INFO | __name__ | 230 | make_choice | Function make_choice() called successfully
+2024.03.06 11:00:36 PM INFO | __name__ | 282 | complete_reroll | Function complete_reroll() called successfully
+2024.03.06 11:00:36 PM INFO | __name__ | 295 | complete_reroll | Function roll() called from complete_reroll()
+2024.03.06 11:00:36 PM INFO | __name__ | 300 | complete_reroll | Function SecondRoll() being called from complete_reroll()
+2024.03.06 11:00:36 PM INFO | __name__ | 200 | secondRoll | Function secondRoll() called successfully
+2024.03.06 11:00:44 PM INFO | __name__ | 209 | secondRoll | Function make_choice() being called from secondRoll() - roll2
+2024.03.06 11:00:44 PM INFO | __name__ | 230 | make_choice | Function make_choice() called successfully
+2024.03.06 11:00:54 PM INFO | __name__ | 282 | complete_reroll | Function complete_reroll() called successfully
+2024.03.06 11:00:54 PM INFO | __name__ | 295 | complete_reroll | Function roll() called from complete_reroll()
+2024.03.06 11:00:54 PM INFO | __name__ | 306 | complete_reroll | Function lastRoll() being called from complete_reroll()
+2024.03.06 11:00:54 PM INFO | __name__ | 311 | complete_reroll | Function score_test() being called from complete_reroll()
+2024.03.06 11:00:54 PM INFO | __name__ | 311 | complete_reroll | Function score_test() being called from complete_reroll()
+2024.03.06 11:00:54 PM INFO | __name__ | 164 | play | Function firstRoll() being called from play()
+2024.03.06 11:50:04 PM INFO | __name__ | 162 | play | New game started.
+2024.03.06 11:50:04 PM INFO | __name__ | 180 | firstRoll | Function roll() called successfully
+2024.03.06 11:50:12 PM INFO | __name__ | 196 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.06 11:50:12 PM INFO | __name__ | 230 | make_choice | Function make_choice() called successfully
+2024.03.06 11:50:41 PM INFO | __name__ | 282 | complete_reroll | Function complete_reroll() called successfully
+2024.03.06 11:50:41 PM INFO | __name__ | 295 | complete_reroll | Function roll() called from complete_reroll()
+2024.03.06 11:50:41 PM INFO | __name__ | 300 | complete_reroll | Function SecondRoll() being called from complete_reroll()
+2024.03.06 11:50:41 PM INFO | __name__ | 200 | secondRoll | Function secondRoll() called successfully
+2024.03.06 11:50:47 PM INFO | __name__ | 205 | secondRoll | Function make_choice() being called from secondRoll() - roll2
+2024.03.06 11:50:48 PM INFO | __name__ | 311 | complete_reroll | Function score_test() being called from complete_reroll()
+2024.03.06 11:50:48 PM INFO | __name__ | 164 | play | Function firstRoll() being called from play()
+2024.03.07 12:06:14 AM INFO | __name__ | 162 | play | New game started.
+2024.03.07 12:06:14 AM INFO | __name__ | 180 | firstRoll | Function roll() called successfully
+2024.03.07 12:06:19 AM INFO | __name__ | 198 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.07 12:06:19 AM INFO | __name__ | 232 | make_choice | Function make_choice() called successfully
+2024.03.07 12:06:33 AM INFO | __name__ | 286 | complete_reroll | Function complete_reroll() called successfully
+2024.03.07 12:06:33 AM INFO | __name__ | 303 | complete_reroll | Function SecondRoll() being called from complete_reroll()
+2024.03.07 12:06:33 AM INFO | __name__ | 202 | secondRoll | Function secondRoll() called successfully
+2024.03.07 12:06:50 AM INFO | __name__ | 207 | secondRoll | Function score_test() being called from secondRoll() - roll2
+2024.03.07 12:06:50 AM INFO | __name__ | 164 | play | Function firstRoll() being called from play()
+2024.03.07 12:11:39 AM INFO | __name__ | 162 | play | New game started.
+2024.03.07 12:11:39 AM INFO | __name__ | 180 | firstRoll | Function roll() called successfully
+2024.03.07 12:11:47 AM INFO | __name__ | 198 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.07 12:11:47 AM INFO | __name__ | 237 | make_choice | Function make_choice() called successfully
+2024.03.07 12:12:05 AM INFO | __name__ | 291 | complete_reroll | Function complete_reroll() called successfully
+2024.03.07 12:12:05 AM INFO | __name__ | 308 | complete_reroll | Function SecondRoll() being called from complete_reroll()
+2024.03.07 12:12:05 AM INFO | __name__ | 203 | secondRoll | Function secondRoll() called successfully
+2024.03.07 12:12:12 AM INFO | __name__ | 213 | secondRoll | Function make_choice() being called from secondRoll() - roll2
+2024.03.07 12:12:12 AM INFO | __name__ | 237 | make_choice | Function make_choice() called successfully
+2024.03.07 12:12:23 AM INFO | __name__ | 291 | complete_reroll | Function complete_reroll() called successfully
+2024.03.07 12:12:23 AM INFO | __name__ | 314 | complete_reroll | Function lastRoll() being called from complete_reroll()
+2024.03.07 12:12:23 AM INFO | __name__ | 219 | lastRoll | Function lastRoll() called successfully
+2024.03.07 12:12:23 AM INFO | __name__ | 225 | lastRoll | Function score_test() being called from lastRoll()
+2024.03.07 12:12:23 AM INFO | __name__ | 164 | play | Function firstRoll() being called from play()
+2024.03.07 12:07:33 PM INFO | __name__ | 162 | play | New game started.
+2024.03.07 12:07:33 PM INFO | __name__ | 180 | firstRoll | Function roll() called successfully
+2024.03.07 12:07:39 PM INFO | __name__ | 198 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.07 12:07:39 PM INFO | __name__ | 237 | make_choice | Function make_choice() called successfully
+2024.03.07 12:10:26 PM INFO | __name__ | 162 | play | New game started.
+2024.03.07 12:10:26 PM INFO | __name__ | 180 | firstRoll | Function roll() called successfully
+2024.03.07 12:10:31 PM INFO | __name__ | 198 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.07 12:10:31 PM INFO | __name__ | 237 | make_choice | Function make_choice() called successfully
+2024.03.07 12:10:37 PM INFO | __name__ | 237 | make_choice | Function make_choice() called successfully
+2024.03.07 12:28:39 PM INFO | __name__ | 164 | play | New game started.
+2024.03.07 12:28:39 PM INFO | __name__ | 182 | firstRoll | Function roll() called successfully
+2024.03.07 12:28:45 PM INFO | __name__ | 200 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.07 12:28:45 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 12:39:04 PM INFO | __name__ | 164 | play | New game started.
+2024.03.07 12:39:04 PM INFO | __name__ | 182 | firstRoll | Function roll() called successfully
+2024.03.07 12:39:11 PM INFO | __name__ | 200 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.07 12:39:11 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 12:39:40 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 12:41:41 PM INFO | __name__ | 164 | play | New game started.
+2024.03.07 12:41:41 PM INFO | __name__ | 182 | firstRoll | Function roll() called successfully
+2024.03.07 12:41:44 PM INFO | __name__ | 200 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.07 12:41:44 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 12:41:49 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 12:50:47 PM INFO | __name__ | 164 | play | New game started.
+2024.03.07 12:50:47 PM INFO | __name__ | 182 | firstRoll | Function roll() called successfully
+2024.03.07 12:50:51 PM INFO | __name__ | 200 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.07 12:50:51 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 12:51:03 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 04:41:39 PM INFO | __name__ | 164 | play | New game started.
+2024.03.07 04:41:39 PM INFO | __name__ | 182 | firstRoll | Function roll() called successfully
+2024.03.07 04:41:48 PM INFO | __name__ | 200 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.07 04:41:48 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 04:42:47 PM INFO | __name__ | 164 | play | New game started.
+2024.03.07 04:42:47 PM INFO | __name__ | 182 | firstRoll | Function roll() called successfully
+2024.03.07 04:42:53 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 04:42:59 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 04:43:32 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 04:43:47 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 04:43:55 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 04:43:57 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 04:43:58 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 04:43:59 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 05:16:12 PM INFO | __name__ | 164 | play | New game started.
+2024.03.07 05:16:12 PM INFO | __name__ | 182 | firstRoll | Function roll() called successfully
+2024.03.07 05:16:28 PM INFO | __name__ | 200 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.07 05:16:28 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 05:16:33 PM INFO | __name__ | 239 | make_choice | Function make_choice() called successfully
+2024.03.07 06:32:27 PM INFO | __name__ | 168 | play | New game started.
+2024.03.07 06:32:27 PM INFO | __name__ | 186 | firstRoll | Function roll() called successfully
+2024.03.07 06:32:32 PM INFO | __name__ | 204 | firstRoll | Function make_choice() being called from roll() - roll1
+2024.03.07 06:32:32 PM INFO | __name__ | 243 | make_choice | Function make_choice() called successfully
+2024.03.07 06:32:36 PM INFO | __name__ | 243 | make_choice | Function make_choice() called successfully
