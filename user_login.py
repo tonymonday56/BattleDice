@@ -4,11 +4,20 @@ from time import sleep
 from BattleDiceDB import BattleDice_db
 import sqlite3
 import logging
-logging.basicConfig(filename='C:\\Projects\\BattleDice\\Logs\\example.log', encoding='utf-8', level=logging.DEBUG)
+
 global user_database
 user_database = {'tmonday56': 'Savannah1'}
-import logger
-logging.basicConfig(filename='C:\\Projects\\BattleDice\\Logs\\BattleDice.log', encoding='utf-8', level=logging.DEBUG)
+import logging
+logger = logging.getLogger("bd_logger")
+logging.basicConfig(filename='C:\\Projects\\BattleDice\\Logs\\BattleDice.log', 
+                           filemode="w", 
+                           format=("%(module)s | %(lineno)d  | %(name)s | %(asctime)s | %(levelname)s | %(message)s"), 
+                           encoding='utf-8', 
+                           datefmt="%Y.%m.%d %H:%M:%S",
+                           level=logging.DEBUG
+                           )
+
+logger = logging.getLogger("bd_logger")
 
 class Users:
     #    user_database = {'tmonday56': 'savannah1'}
@@ -55,12 +64,15 @@ class Users:
             user_database['username'] = user_password
             logger.info("register_user() exiting...")
             print("User registered successfully.")
-            return "User registered successfully."
+            logger.info("login() being called from register_user")
+            login_user()
+            print("User registered successfully.")
 
     def login_user(self):
         """Module to handle user login"""
         logger.info("login_user() starting...")
         global user_database
+        if
         username =  input("Please enter username to login: ")
         user_password =   input("Please enter password to login: ")
    

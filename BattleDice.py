@@ -8,13 +8,14 @@ import sys
 
 import logging
 # Setup logger
+logger = logging.getLogger("__name__")
 logging.basicConfig(filename="C:\\Projects\\BattleDice\\Logs\\BattleDice.log",
                     encoding="utf-8",
                     filemode="a", 
                     format='%(asctime)s %(levelname)s | %(name)s | %(lineno)d | %(funcName)s | %(message)s', 
                     datefmt='%Y.%m.%d %I:%M:%S %p', 
                     level=logging.DEBUG)
-logger = logging.getLogger("__name__")
+
 # Game play dictionaries.
 discard1 = ""
 discard2 = ""
@@ -23,7 +24,7 @@ discard4 = ""
 discard5 = ""
 game_number = None
 hand_number = 1
-player_2_roll = "Player1"
+player_to_roll = "Player1"
 player1_roll = {
             "player1_name": "",
             "player1_die1": 0,
@@ -107,7 +108,24 @@ def print_player1_scorecard():
     for player 1.
 
     Args:
-        None
+        player1_ones -> int
+        player1_twos -> int
+        player1_threes -> int
+        player1_fours -> int
+        player1_fives -> int
+        player1_sixes -> int
+        player1_upperTotal -> int
+        player1_upperBonus -> int
+        player1_3ofaKind -> int
+        player1_4ofaKind -> int
+        player1_fullHouse -> int
+        player1_smallStraight -> int
+        player1_largeStraight -> int
+        player1_yahtzee -> int
+        player1_chance -> int
+        player1_lowerTotal -> int
+        player1_total -> int
+
 
     Returns:
         None
@@ -140,7 +158,23 @@ def print_player2_scorecard():
     for player 2.
 
     Args:
-        None
+        player2_ones -> int
+        player2_twos -> int
+        player2_threes -> int
+        player2_fours -> int
+        player2_fives -> int
+        player2_sixes -> int
+        player2_upperTotal -> int
+        player2_upperBonus -> int
+        player2_3ofaKind -> int
+        player2_4ofaKind -> int
+        player2_fullHouse -> int
+        player2_smallStraight -> int
+        player2_largeStraight -> int
+        player2_yahtzee -> int
+        player2_chance -> int
+        player2_lowerTotal -> int
+        player2_total -> int
 
     Returns:
         None
@@ -167,27 +201,34 @@ def print_player2_scorecard():
 
 
 def play():
-    if player1_roll.get("player1_rollNumber") == 1: # player
-        logger.info("New game started.")
-        firstRoll()
+    """
+    This function starts a new game. It checks the player's roll number and
+    calls the appropriate roll function.
+    """
+    logger.info("New game started.")
+
+    # Check player1's roll number and call the appropriate roll function
+    if player1_roll.get("player1_rollNumber") == 1:
+        # Player1 1st roll
         logger.info("Function firstRoll() being called from play()")
-        #score_test.score_test()
-    elif player1_roll.get("player1_roll.player1_rollNumber") == 2:
-        secondRoll()
+        print("Function firstRoll() being called from play()")
+        firstRoll()
+    elif player1_roll.get("player1_rollNumber") == 2:
+        # Player1 2nd roll
         logger.info("Function secondRoll() being called from play()")
-    elif player1_roll.get("player1_roll.player1_rollNumber") == 3:
-        lastRoll()
+        print("Function secondRoll() being called from play()")
+        secondRoll()
+    elif player1_roll.get("player1_rollNumber") == 3:
+        # Player1 final roll
         logger.info("Function lastRoll() being called from play()")
-    
-        # elif player1_card["Twos"] = 0
-        #     player1_card["Threes"] = 0
-        #     player1_card["Fours"] = 0
-        #     player1_card["Fives"] = 0
-        #     player1_card["Sixes"] = 0
+        print("Function lastRoll() being called from play()")
+        lastRoll()
+
+
 
 def firstRoll():
-    logger.info("Function roll() called successfully")
     """Initial roll of the dice"""
+    logger.info("Function firstRoll() called successfully")
     player1_roll["player1_die1"] = random.randint(1,6)
     player1_roll["player1_die2"] = random.randint(1,6)
     player1_roll["player1_die3"] = random.randint(1,6)
@@ -197,15 +238,19 @@ def firstRoll():
     print("Roll Number: "  , player1_roll.get("player1_rollNumber"))
     keep1 = input("Would you like to discard any die?: ")
     if keep1.upper() == "N":
+        # Player1 choses to keep current roll.  Call score to score the roll.
         player1_roll["player1_rollNumber"] = player1_roll.get("player1_rollNumber") + 1
         print("score_test() being called from roll() - roll1")
         logger.info("Function score_test() being called from roll() - roll1")
         score_test.score_test()
         return player1_roll.get("player1_die1"),player1_roll.get("player1_die2"), player1_roll.get("player1_die3"), player1_roll.get("player1_die4", player1_roll.get("player1_die5"))    
+    
     elif keep1.upper() == "Y": 
-        print("make_choice being called from roll() - roll1")
-        logger.info("Function make_choice() being called from roll() - roll1")
-    make_choice()
+        # Player1 choses to not keep rent roll.  Calling make_choice()
+        # player1_roll["player1_rollNumber"] = player1_roll.get("player1_rollNumber") + 1
+        print("make_choice being called from firstRoll() - Roll1")
+        logger.info("Function make_choice() being called from firstroll() - roll1")
+        make_choice()
 
 def secondRoll():
     print("Function secondRoll() called successfully")
@@ -230,9 +275,9 @@ def lastRoll():
     """
     Go to score roll as no more available rolls.
     """
-    print("score_test being called from lastRoll()")
+    print("Function score_test being called from lastRoll()")
     logger.info("Function score_test() being called from lastRoll()")
-
+    score_test.score_test
 
 
 def make_choice():
@@ -240,8 +285,11 @@ def make_choice():
     Give player opportunity to modify roll.
     """
     global discard1,discard2, discard3, discard4, discard5
+    print("make_choice() started")
+    logger.info("Function make_choice() started")
     
     if player1_roll.get("player1_rollNumber") == 1:
+        # Roll 1 discard options
         print("Function make_choice() called successfully")
         logger.info("Function make_choice() called successfully")
        
@@ -285,10 +333,25 @@ def make_choice():
         #player1_discard_roll1 = player1_roll.get("player1_discard_roll1")
         print("Roll1 Discards: ", player1_roll.get("player1_discard_roll1"))
         logger.info("Roll1 Discards: ")
-        print("Please enter either [Y] or [N].  To exit enter CTRL-Z: ")
+        print("Please enter either [Y] or [N] to proceed.  To exit enter CTRL-Z: ")
+        save_choice1 = input("Are you satisfied with you discards? [Y] or [N]: ")
+        if save_choice1.upper() == "Y":
+            # Player1 satisfied with discards.  Calling score()
+            #TODO reset player1_roll["player1_rollNumber"] after scoring.
+            print("Function score() called successfully")
+            logger.info("Function score() called successfully")
+            player1_roll["player1_rollNumber"] = player1_roll.get("player1_rollNumber") + 1
+            print("Function complete_reroll() called from make_choice()")
+            logger.info("Function complete_reroll() called from make_choice()")
+            complete_reroll()
+        elif save_choice1.upper() == "N":
+            # Player1 notsatisfied with discards.  Calling make_choice()
+            print("Function make_choice() called successfully")
+            logger.info("Function make_choice() called successfully")
+            make_choice()
         #TODO
-        print("Function make_choice() called successfully")
-        logger.info("Function make_choice() called successfully")r
+        # print("Function make_choice() called successfully")
+        # logger.info("Function make_choice() called successfully")
         
         discard1 = input("Would you like to discard die1? Y for Yes:")
         discard2 = input("Would you like to discard die2? Y for Yes:")
@@ -298,30 +361,35 @@ def make_choice():
         okay_to_reroll = [None, None, None, None, None]
         print("Die to be re-rolled")
         if discard1.upper() == "Y":
+            # Player wishes to reroll die1
             print("Die# 1")
             okay_to_reroll[0] = discard1.upper()
             player1_roll["player1_discard_roll2"].insert(0, "Die#1")
         elif discard1.upper() == "N":
             player1_roll["player1_discard_roll2"].insert(0, "No Change") 
         if discard2.upper() == "Y":
+            # Player wishes to reroll die2
             print("Die# 2")
             okay_to_reroll[1] = discard2.upper()
             player1_roll["player1_discard_roll2"].insert(1, "Die#2")
         elif discard2.upper() == "N":
             player1_roll["player1_discard_roll2"].insert(1, "No Change") 
         if discard3.upper() == "Y":
+            # Player wishes to reroll die3
             print("Die# 3")
             okay_to_reroll[2] = discard3.upper()
             player1_roll["player1_discard_roll2"].insert(2, "Die#3")
         elif discard3.upper() == "N":
             player1_roll["player1_discard_roll2"].insert(2, "No Change") 
         if discard4.upper() == "Y":
+            # Player wishes to reroll die4
             print("Die# 4")
             okay_to_reroll[3]  = discard4.upper()
             player1_roll["player1_discard_roll2"].insert(3, "Die#4")
         elif discard4.upper() == "N":
             player1_roll["player1_discard_roll2"].insert(3, "No Change") 
         if discard5.upper() == "Y":
+            # Player wishes to reroll die5
             print("Die# 5")
             okay_to_reroll[4] = discard5.upper()
             player1_roll["player1_discard_roll2"].insert(4, "Die#5")
@@ -369,22 +437,28 @@ def complete_reroll():
         player1_roll["player1_die4"] = random.randint(1,6)
     if discard5.upper() == "Y":
         player1_roll["player1_die5"] = random.randint(1,6)
+
     if player1_roll.get("player1_rollNumber") == 1:
-        player1_roll["player1_discard_roll"][0] = "Die#1"
-        player1_roll["player1_rollNumber"] = int(player1_roll.get("player1_rollNumber")) + 1
+       # First roll for player1
+        
+        player1_roll["second_roll_list"] = [player1_roll.get("player1_die1"), player1_roll.get("player1_die2"), player1_roll.get("player1_die3"),  player1_roll.get("player1_die4"), player1_roll.get("player1_die5")]
         print("|", player1_roll.get("player1_die1"), "|", player1_roll.get("player1_die2"), "|", player1_roll.get("player1_die3"), "|",  player1_roll.get("player1_die4"), "|", player1_roll.get("player1_die5"), "|")
         logger.info("|", player1_roll.get("player1_die1"), "|", player1_roll.get("player1_die2"), "|", player1_roll.get("player1_die3"), "|",  player1_roll.get("player1_die4"), "|", player1_roll.get("player1_die5"), "|")
         print("Function secondRoll() being called from complete_reroll()")
         logger.info("Function SecondRoll() being called from complete_reroll()")
+        player1_roll["player1_rollNumber"] = int(player1_roll.get("player1_rollNumber")) + 1
         secondRoll()
     elif player1_roll.get("player1_rollNumber") == 2:
-        player1_roll["player1_rollNumber"] = int(player1_roll.get("player1_rollNumber")) + 1
+        # Second roll for player1
         print("|", player1_roll.get("player1_die1"), "|", player1_roll.get("player1_die2"), "|", player1_roll.get("player1_die3"), "|",  player1_roll.get("player1_die4"), "|", player1_roll.get("player1_die5"), "|")
         logger.info("|", player1_roll.get("player1_die1"), "|", player1_roll.get("player1_die2"), "|", player1_roll.get("player1_die3"), "|",  player1_roll.get("player1_die4"), "|", player1_roll.get("player1_die5"), "|")
         print("Function lastRoll() being called from complete_reroll()")
         logger.info("Function lastRoll() being called from complete_reroll()")
+        player1_roll["player1_rollNumber"] = int(player1_roll.get("player1_rollNumber")) + 1
+
         lastRoll()
     elif player1_roll.get("player1_rollNumber") == 3:
+        # Last roll for player1
         print("|", player1_roll.get("player1_die1"), "|", player1_roll.get("player1_die2"), "|", player1_roll.get("player1_die3"), "|",  player1_roll.get("player1_die4"), "|", player1_roll.get("player1_die5"), "|")
         logger.info("|", player1_roll.get("player1_die1"), "|", player1_roll.get("player1_die2"), "|", player1_roll.get("player1_die3"), "|",  player1_roll.get("player1_die4"), "|", player1_roll.get("player1_die5"), "|")
         print("Function score_test() being called from complete_reroll()")

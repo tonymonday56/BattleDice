@@ -1,1 +1,5 @@
 yahtzee_db.py
+logs/
+db/BattleDice.db
+__pycache__/BattleDiceDB.cpython-311.pyc
+git-diagnostics-2024-03-20-1822.zip

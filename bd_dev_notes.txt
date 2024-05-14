@@ -1,0 +1,29 @@
+bd_dev_notes.txt
+
+keepers = dice not to be rerolled
+player_to_roll indicates which player is currently rolling. 
+Options are Player1 or Player2.
+
+Use bd_score.py going forward as the official scoring module. 
+
+Complete thes scoring module bd_score in bd_score.py.
+
+Player input/choice module for scoring needs to be created.
+    p1_score_choice() and p2_score_choice()
+    The input is goint to be a dictionary provided by bd_score 
+    in bd_score.py
+
+change to 6 dice
+
+change to 3OfAKind becomes 4OfAKind
+chantge 4OfAKind becomes 5OfAKind
+
+I've been doing some googling, and I've found (as I expected) 
+that there are 46,656 possible combinations of randomly rolling 
+six fair d6-dice. This derives from 66 = 46,656.
+
+play mode to switch between players needs to be created use 
+    use global player_to_roll as flag.
+
+finish the player registration and login information modules
+need to be assigned to get this completed.
