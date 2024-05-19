@@ -7,10 +7,10 @@ def four_of_a_kind(dice):
     if len(dice_set) < 3:
         for count in counts:
             if 4 in counts:
-                print("2four_of_a_kind")
+                print("four_of_a_kind")
                 return "four_of_a_kind"
             elif 5 in counts:
-                print("3four_of_a_kind")
+                print("four_of_a_kind")
                 return "four_of_a_kind"
             else:
                 print(False)
